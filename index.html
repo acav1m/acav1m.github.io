@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ACAV-1M: Data Curation and Benchmarking for Audio-Visual Representation Learning.">
+  <meta name="keywords" content="3D-Navigation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACAV-1M: Data Curation and Benchmarking for Audio-Visual Representation Learning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ACAV-1M: Data Curation and Benchmarking for Audio-Visual Representation Learning</h1>
+          <div class="is-size-5 publication-authors">
+            Anonymous NeurIPS Datasets and Benchmarks Track Submission
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            ID: 1350
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    
+    <div class="hero-body">
+      <img src="assets/framework.png"/>
+      <h2 class="subtitle has-text-centered">
+        Our ACAV-1M collection paradigm utilizes a multimodal Large Language Model (LLM) to generate multiple captions from audio and video inputs. 
+        Then, an LLM is adopted to summarize the long captions into one sentence for the following alignment filtering steps. 
+        Finally, we use ImageBind (IB) to ensure the coherence and synchronization between modalities by measuring audio-language, audio-video instance, and audio-video temporal alignment.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <hr>
+        <div class="content has-text-justified">
+          <p>
+            The natural alignment of visual and audio information in videos provides a strong learning signal. 
+            However, commonly used large-scale video datasets contain audio-visual signals that are not aligned, e.g. background music. 
+            This limits the development of robust models that leverage the complementary nature of audio and video data. 
+            To address this limitation, we curate ACAV-1M, a new large-scale dataset that contains one million samples sourced from the ACAV-100M dataset. 
+            The ACAV-1M dataset is obtained through a pipeline that ensures the audio-visual correspondence and synchronization of samples in the dataset. 
+            Our pipeline transforms raw video and audio into text captions, followed by text summarization and an extensive filtering procedure. 
+            The filtering is done based on audio-caption alignment, audio-visual instance semantic alignment, and temporal synchronization. 
+            Furthermore, we propose an audio-visual learning benchmark that supports a diverse range of downstream tasks. 
+            Empirical evaluations demonstrate that models trained on ACAV-1M achieve superior performance compared to using existing datasets across all tasks. 
+            Our ACAV-1M dataset and code to reproduce all benchmark results will be made publicly available upon acceptance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <hr>
+        <!-- <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div> -->
+        <div class="column has-text-centered">
+          <img src="assets/table_one.png" width="960" height="720"/>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_two.png" width="960" height="720"/>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_three.png" width="960" height="720"/>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_four.png" width="960" height="720"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="hero-body">
+        <h2 class="title is-3">Experimental Analyses</h2>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_ablation_data.png" width="960" height="720"/>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_ablation_filter.png" width="960" height="720"/>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_ablation_scale.png" width="960" height="720"/>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Thanks to the website template from <a
+            href="https://nerfies.github.io/">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
